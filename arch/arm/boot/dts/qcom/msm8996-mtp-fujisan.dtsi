@@ -12,7 +12,8 @@
 
 #include "msm8996-pinctrl.dtsi"
 //#include "msm8996-camera-sensor-mtp.dtsi"
-#include "zte-usb-type-c.dtsi"
+#include "zte-camera-sensor-mtp-fujisan.dtsi"
+#include "zte-usb2-type-c.dtsi"
 #include "msm8996-wsa881x.dtsi"
 
 / {
@@ -30,11 +31,11 @@
 };
 
 &ufs_ice {
-        status = "ok";
+	status = "ok";
 };
 
 &sdcc1_ice {
-        status = "ok";
+	status = "ok";
 };
 
 &ufsphy1 {
@@ -549,7 +550,6 @@
 	mtp_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;
 		#include "zte_p996a01_3250mah.dtsi"
-		#include "zte_P817a22cos_3320mAh.dtsi"
 	};
 };
 
@@ -698,7 +698,6 @@
 };
 
 &soc {
-
 	goodix_gf3118@1 {
 			compatible = "goodix,fingerprint";
 			//reg = <0x1>;
@@ -710,7 +709,6 @@
 			goodix,gpio_id = <&tlmm 21 0>;
 			goodix,gpio_irq = <&tlmm 123 0>;
 	};
-
 
 	gpio_keys {
 		compatible = "gpio-keys";

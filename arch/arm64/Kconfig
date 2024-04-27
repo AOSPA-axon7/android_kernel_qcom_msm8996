@@ -345,6 +345,9 @@ config ARCH_MSM8996
 	  This enables support for the MSM8996 chipset. If you don't
 	  know what to do here, say N
 
+config ZTE_BUILD
+	bool "Enable Support for ZTE"
+
 config ARCH_MSMCOBALT
 	bool "Enable Support for Qualcomm MSMCOBALT"
 	depends on ARCH_MSM
